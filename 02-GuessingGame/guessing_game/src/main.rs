@@ -1,3 +1,4 @@
+// Bringing the library into scope
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
@@ -17,8 +18,9 @@ fn main() {
 // Hint: by default variables in Rust are immutable, thus we use the "mut" prefix to make them mutable. 
         let mut guess = String::new();
 
+// The input/output functionality, allows us to handle user inputs... The full job of read_line is to take whatever the user types into standard input and append that into a string (without overwriting its contents), The "&" indicates that this argument is a reference ie a mutable reference(&mut)
         io::stdin()
-            .read_line(&mut guess)
+            .read_line(&mut guess) 
             .expect("Failed to read line");
 
         let guess: u32 = match guess.trim().parse() {
