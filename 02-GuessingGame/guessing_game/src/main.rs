@@ -10,7 +10,7 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
-    println!("The secret number is: {}", secret_number);
+     println!("The secret number is: {}", secret_number);
 
     loop {
         println!("Please input your guess.");
@@ -25,7 +25,7 @@ fn main() {
 
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue,
+            Err(_) => continue, //  The underscore, _, is a catchall value
         };
 
         println!("You guessed: {}", guess);
