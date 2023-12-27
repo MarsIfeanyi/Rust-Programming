@@ -2,7 +2,8 @@ fn main() {
 
     // Calling the function
 
-my_function(x:11, y:22);
+let sum: i32 = my_function(x:11, y:22);
+println!("The sum is: {}", sum)
 
 // VARIABLES
 
@@ -111,10 +112,12 @@ let byte:[i32; _] = [0;8]; // create an array with 8 values or set to 0
 
 // You will invoke or call the function you declared inside the main function
 
-fn my_function(x: i32, y:i32){
+fn my_function(x: i32, y:i32) -> i32 {
     println!("Another function");
 
     println!("The value of x is: {}", x);
      println!("The value of y is: {}", y);
+
+     x + y;
 
 }
