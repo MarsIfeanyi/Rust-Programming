@@ -20,15 +20,12 @@ println!("The sum is: {}", sum)
     const SUBSCRIBER_COUNT:u32 = 100_000;
 
     // SHADOWING: It allows you to create a new variable, using an existing name.
-let   y: i32 = 5;
+let y: i32 = 5;
     println!("The value of y is: {}", y);
 
     // Hint: The first y variable is shadowed by the 2nd y variable. 
-  let   y:&str ="Six" ;
+  let y:&str ="Six" ;
     println!("The value of y is: {}", y);
-
-
-
 
 // DATA types
 
@@ -39,7 +36,7 @@ let   y: i32 = 5;
 // 4. Character
 
 
-let a: i32 =98_222; // Decimal
+let a: i32 = 98_222; // Decimal
 let b: i32 = 0xff; // Hex
 let c: i32 = 0o77; // Octal
 let d: i32 = 0b1111_0000; // Binary
@@ -87,8 +84,8 @@ let tup: (&str, i32) = ("Let's Get Rusty!", 100_000); // tuples are written by u
 
 let (channel, sub_count) = tup; // destructuring
 
-let sub_count: i32 = tup.1;
-
+let sub_count: i32 = tup.1; // dot notation
+ 
 
 // ARRAYS
 
@@ -99,10 +96,7 @@ let not_found:i32 = error_codes[1];
 let x: i32 = error_codes[3];
 
 // Another way of Declaring an array
-let byte:[i32; _] = [0;8]; // create an array with 8 values or set to 0
-
-
-
+let byte:[i32; _] = [0; 8]; // create an array with 8 values and set all to 0
 
     
 }
@@ -118,6 +112,10 @@ fn my_function(x: i32, y:i32) -> i32 {
     println!("The value of x is: {}", x);
      println!("The value of y is: {}", y);
 
-     x + y;
+     x + y // When you are not using the return statement then remove the `;`
+
+     // OR 
+
+     // return x + y;
 
 }
