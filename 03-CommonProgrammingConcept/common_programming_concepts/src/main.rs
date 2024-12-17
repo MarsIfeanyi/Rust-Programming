@@ -15,8 +15,7 @@ println!("The sum is: {}", sum)
     x = 6;
     println!("The value of x is: {}", x);
 
-    // Declaring Constant variables. Hint: You cannot mutate a constant
-
+    // Declaring Constant variables. Hint: You cannot mutate a constant and you cannot also use constant variable as an expression
     const SUBSCRIBER_COUNT:u32 = 100_000;
 
     // SHADOWING: It allows you to create a new variable, using an existing name.
