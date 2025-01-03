@@ -44,8 +44,8 @@ fn explanations(){
 
 
 
-    let x: i32 =5;
-let y:i32=x; // Copy
+    let x: i32 = 5;
+let y:i32 = x; // Copy
 
 let s1:String = String::from ("hello");
 
