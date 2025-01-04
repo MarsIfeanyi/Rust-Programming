@@ -1,3 +1,8 @@
+// Structs are used to create custom data types in Rust. They are similar to classes in other languages. Structs allow you to group related data together.
+
+
+
+
 struct User{
     username: String, 
     email: String,
@@ -29,10 +34,10 @@ fn main() {
         sign_in_count: 1
     };
 
-    // We get specific values from our struct by using the dot notation
+    // Hint: We get specific values from our struct by using the dot notation
     let name: String = user1.username;
 
-    // Updating the value in struct
+    //We can also modify specific value in our struct by using the dot notation, hence you need to make struct mutable in its definition... Updating the value in struct
 user1.username = String::from("MarsEnergy");
 
 
